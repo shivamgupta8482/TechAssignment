@@ -38,15 +38,16 @@ function handleCalculate(a,b,x){
     
     temp.push(a);
     temp.push(b);
-    for(let i =0;i<x;i++){
+    var i =0;
+   while(i<x){
         let num = temp[i]+temp[i+1];
         temp.push(num);
-       
+       i++;
     }
     arr.push(temp);
     console.log(arr.join());
   }
-handleCalculate(0,1,5)
+handleCalculate(0,1,8)
 
 
 //TASK2
