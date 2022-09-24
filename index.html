@@ -7,6 +7,116 @@
     <title>Document</title>
 </head>
 <body>
-    
+  
+    <h1>TASK1</h1>
+
+    <h1>TASK2</h1>
+    <h1>TASK3</h1>
+    <h1>TASK4</h1>
+    <tbody id="body">
+
+    </tbody>
+    <h1>TASK5</h1>
+    <h1>TASK6</h1>
+
+
+
+
 </body>
 </html>
+
+<script>
+
+
+// TASK1
+
+//TASK2
+function sum(n,m){
+    let evensum = 0;
+let oddsum = 0;
+for(let i =n;i<m;i++){
+    i%2==0?evensum+=i : oddsum+=i;
+}
+
+console.log(evensum,oddsum)
+}
+
+sum(1,100)
+
+
+//TASK 3 
+const isEven = num => num % 2 === 0;
+
+console.log(isEven(3)); 
+
+//TASK4
+
+const objects = 
+ { "employees":
+[
+{
+"first_name": "Amit",
+"last_name": "Sharma",
+"department": "SEO"
+},
+{
+"first_name": "Vineet",
+"last_name": "Kumar",
+"department": "Accounts"
+},
+{
+"first_name": "Ajay",
+"last_name": "Thakur",
+"department": "QA"
+},
+{
+"first_name": "Chandra",
+"last_name": "Sharma",
+"department": "Designer"
+}
+]
+}
+
+
+function displaydata(data){
+    
+data.forEach(function(elem){
+   // console.log(elem.first_name);
+    var tr = document.createElement("tr");
+    var td1 =document.createElement("td");
+    td1.innerText=elem.first_name; 
+    var td2 =document.createElement("td");
+    td1.innerText=elem.last_name; 
+    var td3 =document.createElement("td");
+    td1.innerText=elem.department; 
+
+    // tr.append(td1,td2,td3);
+    // document.querySelector("#body").append(tr)   
+
+})
+
+
+
+
+}
+
+//Task5
+
+
+
+
+
+//Task6
+
+
+
+displaydata(objects.employees)
+
+
+
+
+
+
+
+
+</script>
